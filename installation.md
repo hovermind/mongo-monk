@@ -17,14 +17,14 @@ Details: [Configuration File Options](https://docs.mongodb.com/manual/reference/
  - Create 'log' & 'data' folder in 'myapp' folder (`c:\myapp\log` & `c:\myapp\data`)    
  - Create 'db' folder in 'data' folder (`c:\myapp\data\db`)   
 
-**Install the MongoDB service** 
-Open cmd as administrator & run command
+**Install `mongod.exe` as service**     
+Open `cmd` as administrator & run command
 ```
 "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\bin\mongod.cfg" --install
 ```
 To verify that MongoDB has started successfully, open `c:\myapp\log\mongod.log`    
 
-
+**Use `mongod.exe` as service**     
 Start Service: `net start MongoDB`    
 Stop Service: `net stop MongoDB`    
 Remove: `"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --remove`    
