@@ -23,6 +23,11 @@ Open `cmd` as administrator & run command
 "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\bin\mongod.cfg" --install
 ```
 To verify that 'MongoDB' has added successfully as service, open `c:\myapp\log\mongod.log`    
+```
+2018-02-27T07:20:15.075-0700 I CONTROL  [main] Trying to install Windows service 'MongoDB'
+2018-02-27T07:20:15.078-0700 I CONTROL  [main] Service 'MongoDB' (MongoDB) installed with command line '"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\bin\mongod.cfg" --service'
+2018-02-27T07:20:15.079-0700 I CONTROL  [main] Service can be started from the command line with 'net start MongoDB'
+```
 
 ### Use `mongod.exe` as service
 Start Service: `net start MongoDB`    
