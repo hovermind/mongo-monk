@@ -1,9 +1,9 @@
 ## Windows
  - Download: [MongoDB](https://www.mongodb.com/download-center?jmp=nav#community) & Install msi.   
  - Go: `C:\Program Files\MongoDB\Server\{version}`
- - Create 'conf' folder & create file `mongod.cfg` in 'conf' folder    
+ - Create `mongod.cfg` in 'bin' folder    
  
-`C:\Program Files\MongoDB\Server\{version}\conf\mongod.cfg`:
+`C:\Program Files\MongoDB\Server\{version}\bin\mongod.cfg`:
 ```
 systemLog:
     destination: file
@@ -14,11 +14,19 @@ storage:
 Details: [Configuration File Options](https://docs.mongodb.com/manual/reference/configuration-options/)
 
  - Create 'myapp' folder in C drive
- - Create log & data folder in 'myapp' folder    
+ - Create 'log' & 'data' folder in 'myapp' folder (`c:\myapp\log` & `c:\myapp\data`)    
+ - Create 'db' folder in 'data' folder (`c:\myapp\data\db`)   
 
+**Install the MongoDB service** 
 Open cmd as administrator & run command
 ```
-"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\conf\mongod.cfg" --install
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\bin\mongod.cfg" --install
 ```
-To verify that MongoDB has started successfully, open `c:\myapp\log\mongod.log`b    
+To verify that MongoDB has started successfully, open `c:\myapp\log\mongod.log`    
+
+
+Start Service: `net start MongoDB`    
+Stop Service: `net stop MongoDB`    
+Remove: `"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --remove`    
+
 
