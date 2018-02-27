@@ -30,7 +30,12 @@ To verify that 'MongoDB' has added successfully as service, open `c:\myapp\log\m
 ```
 
 ### Use `mongod.exe` as service
-Start Service: `net start MongoDB`    
+Start Service: `net start MongoDB`
+```
+C:\>net start MongoDB
+The MongoDB service is starting.
+The MongoDB service was started successfully.
+```
 Stop Service: `net stop MongoDB`    
 Remove: `"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --remove`    
 
