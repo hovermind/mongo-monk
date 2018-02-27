@@ -40,4 +40,8 @@ Stop service: `net stop MongoDB`
 
 Remove: `"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --remove`    
 
+### Connect to MongoDB
+ - Add environment variable: `C:\Program Files\MongoDB\Server\3.6\bin`
+ - Open cmd and run command: `mongo` (`mongo.exe` is the mongo shell in bin folder, since we added environment variable, cmd will recognize `mongo` command)
+
 
