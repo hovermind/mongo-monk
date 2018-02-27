@@ -22,7 +22,7 @@ Open `cmd` as administrator & run command
 ```
 "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\bin\mongod.cfg" --install
 ```
-To verify that MongoDB has started successfully, open `c:\myapp\log\mongod.log`    
+To verify that 'MongoDB' has added successfully as service, open `c:\myapp\log\mongod.log`    
 
 ### Use `mongod.exe` as service
 Start Service: `net start MongoDB`    
